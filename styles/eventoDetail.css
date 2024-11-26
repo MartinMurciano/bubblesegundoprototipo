@@ -1,0 +1,316 @@
+  body{
+      margin: 0;
+      background-color: #f4f4f4; /* Color de respaldo en caso de que el PNG no cargue */
+  }
+  /* Banner con efecto Parallax */
+  .banner {
+    width: 100%;
+    height: 300px;
+    max-width: 75%;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('/app/img/TwentyOnePilots_1100x400.png'); /* Cambia 'banner.jpg' por tu imagen */
+    background-attachment: fixed; /* Efecto Parallax */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+ /* Sección de Detalles del Evento */
+.event-details {
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+    z-index: 1; /* Asegurarse de que se sitúe sobre el fondo */
+    display: flex;
+    flex-wrap: wrap; /* Asegura que sea responsivo */
+    gap: 20px;
+    padding: 20px;
+    max-width: 75%;
+    margin: 20px auto;
+    margin-top: 0 !important;
+    background-color: #fff;
+  }
+
+  .no-bottom{
+    margin-bottom: 0 !important;
+    border-radius: 0px !important;
+  }
+
+  .comentarios{
+    border-radius: 0px 0px 5px 5px;
+    box-shadow:  0px 4px 0px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+  }
+  
+  /* Contenido Principal (2/3 de la pantalla) */
+  .event-main {
+    flex: 2;
+    padding-right: 20px;
+  }
+  
+  .event-main h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+  }
+  
+  .event-main p {
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  /* Información Adicional (1/3 de la pantalla) */
+  .event-info {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.329);
+  }
+  
+  .event-info ul {
+    list-style: none;
+    padding: 0;
+    padding-bottom: 10px;
+  }
+  
+  .event-info ul li {
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #333;
+    display: flex;
+    align-items: center;
+  }
+  
+  .event-info ul li i {
+    color: #e5e1ee;
+    margin-right: 10px;
+  }
+  
+  .event-info button {
+    background-color:#e5e1ee;
+    color: black;
+    font-weight: bold;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  .event-info button:hover {
+    background-color: #f1c1ea;
+  }
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    .event-details {
+      flex-direction: column;
+    }
+  
+    .event-main {
+      padding-right: 0;
+    }
+  
+    .event-info {
+      text-align: center;
+    }
+  }
+
+  .background-wave{
+      background-image: url('/app/img/wave2.png'); /* Ruta de tu imagen */
+      background-repeat: no-repeat; /* No repetir la ola */
+      background-position: bottom center; /* Ubicar la ola al fondo, centrada horizontalmente */
+      background-size: 100%; /* Ajustar el tamaño del fondo para cubrir todo el ancho */
+  }
+
+
+
+  /* Estrellas */
+  :root {
+    --color-inactivo: #5f5050;
+    --color-hover: #ffa400;
+}
+.valoracion {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.valoracion button {
+    background-color: initial;
+    border: 0;
+    color: var(--color-inactivo);
+    transition: 1s all;
+}
+.valoracion button:hover {
+    cursor: pointer;
+    color: var(--color-hover);
+    transform: rotate(360deg);
+}
+button:nth-child(1):hover ~ button {
+    color: var(--color-hover);
+    transform: rotate(360deg);
+}
+button:nth-child(2):hover ~ button {
+    color: var(--color-hover);
+    transform: rotate(360deg);
+}
+button:nth-child(3):hover ~ button {
+    color: var(--color-hover);
+    transform: rotate(360deg);
+}
+button:nth-child(4):hover ~ button {
+    color: var(--color-hover);
+    transform: rotate(360deg);
+}
+button:nth-child(5):hover ~ button {
+    color: var(--color-hover);
+    transform: rotate(360deg);
+}
+
+.activo{
+    color:#f1c1ea  !important ;
+}
+
+.valoracion-top button{
+  background-color: initial;
+    border: 0;
+    color: var(--color-inactivo);
+}
+
+.valoracion-top{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.form-container{
+    width: 100%;
+    padding: 20px;
+}
+
+.form-container input, 
+.form-container textarea {
+    width: 100%;
+    border: 1px solid #e1d5e0;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-container textarea {
+    height: 150px;
+    resize: none;
+}
+
+.form-container button {
+  background-color:#e5e1ee;
+  color: black;
+  font-weight: bold;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 20px;
+  width: 100%;
+}
+.form-container button:hover {
+  background-color: #f1c1ea;
+}
+
+h4{
+  width: 100%;
+}
+
+.comentario-border{
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.comentarios-left{
+  flex:2;
+  padding-right: 20px;
+}
+
+.comentarios-right{
+  flex: 2;
+}
+
+.comentario-mostrar{
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.comentario-p{
+  padding-left: 10px;
+}
+
+.profile-comment{
+  height: 50px;
+  border-radius: 10px;
+}
+
+.profile-name{
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+/*
+
+  :root {
+    --color-inactivo: #5f5050;
+    --color-hover: #ffa400;
+}
+.valoracion {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.valoracion button {
+    background-color: initial;
+    border: 0;
+    color: var(--color-inactivo);
+    transition: 1s all;
+}
+.valoracion button:hover {
+    cursor: pointer;
+    color: var(--color-hover);
+    transform: rotate(360deg);
+}
+button:nth-child(1):hover ~ button {
+    color: var(--color-hover);
+    transform: rotate(360deg);
+}
+button:nth-child(2):hover ~ button {
+    color: var(--color-hover);
+    transform: rotate(360deg);
+}
+button:nth-child(3):hover ~ button {
+    color: var(--color-hover);
+    transform: rotate(360deg);
+}
+button:nth-child(4):hover ~ button {
+    color: var(--color-hover);
+    transform: rotate(360deg);
+}
+button:nth-child(5):hover ~ button {
+    color: var(--color-hover);
+    transform: rotate(360deg);
+}
+
+*/
